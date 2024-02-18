@@ -1,0 +1,852 @@
+{
+	"folders": [
+		{
+			"name": "Lectie2",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Lectie2 Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Test",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Test",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Test",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Shipping",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Shipping",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"Mac",
+					"Shipping",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Test",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Test",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Test",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Shipping",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Shipping",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2 IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2 IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2",
+					"IOS",
+					"Shipping",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2Editor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"Debug",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2Editor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Lectie2Editor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "Lectie2Editor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Lectie2Editor",
+					"Mac",
+					"Development",
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Lectie2 (Debug)",
+				"request": "launch",
+				"program": "/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "Lectie2 Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2 (DebugGame)",
+				"request": "launch",
+				"program": "/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "Lectie2 Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2 (Development)",
+				"request": "launch",
+				"program": "/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "Lectie2 Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2 (Test)",
+				"request": "launch",
+				"program": "/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "Lectie2 Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2 (Shipping)",
+				"request": "launch",
+				"program": "/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "Lectie2 Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2Editor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "Lectie2Editor Mac Debug Build",
+				"args": [
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2Editor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "Lectie2Editor Mac DebugGame Build",
+				"args": [
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Lectie2Editor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "Lectie2Editor Mac Development Build",
+				"args": [
+					"/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/alexjilavu/Facultate/UNIBUC/Anul 3/Semestrul 1/Dezvoltarea Jocurilor 3D cu UE5/Proiecte UE5.3/Lectie2/Lectie2.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.3"
+			}
+		]
+	}
+}
