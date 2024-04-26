@@ -1,3 +1,44 @@
+# Tragedy in Caravor
+
+## About the Game
+
+"Tragedy in Caravor" is a 3D game that transports you to a medieval world where you must explore, collect artifacts, and face monsters to unravel the mystery engulfing the town of Caravor. Inspired by renowned MMORPGs, this game combines classic elements with a unique and captivating story.
+
+## Game Story
+
+Once a peaceful town, Caravor now faces an unknown terror following the desecration of a king's sarcophagus. Players must navigate through this darkened world, once full of harmony, to restore peace and order.
+
+## Technical Specifications
+
+- **Platforms**: Developed for Windows and MacOS.
+- **Memory**: Requires 1.43GB of storage space and at least 1GB RAM.
+- **Additional Packages**: Included in the package for a complete gaming experience.
+- **Internet Connection**: Not required.
+- **Saved Data**: Includes details such as user name, gameplay details, character position, and player progress.
+
+## Gameplay and Control
+
+For an immersive experience, the game relies on the use of keyboard and mouse, with intuitive controls for movement, combat, and exploration.
+
+## Comparative Analysis
+
+"Tragedy in Caravor" draws inspiration from games like Runescape, Dark Souls, the Diablo Series, and Skyrim, bringing improvements and offering a new and enhanced experience.
+
+## Installation
+
+To install and run "Tragedy in Caravor," follow the specific steps for the operating system you are using. Make sure all necessary additional packages are installed.
+
+## Contributions
+
+Contributions to improve and expand "Tragedy in Caravor" are always welcome. If you wish to contribute, please follow standard procedures by creating issues or pull requests.
+
+For more details on the game's story, mechanics, and development, please consult the documentation included in this repository.
+
+
+### Romanian Translation Below
+---
+
+
 # Tragedie în Caravor
 
 ## Despre Joc
